@@ -1,0 +1,20 @@
+---
+layout: default
+section: home
+title: News
+---
+
+
+News appear here!
+{{site.posts}}
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h1>{{ post.title }}</h1>
+	  {{post.content}}
+    </li>
+  {% endfor %}
+</ul>
+
+

@@ -1,0 +1,7 @@
+name: RISE
+source: .
+destination: ./_site
+layouts: ./_layouts
+exclude: ['.doc','.docx']
+markdown: redcarpet
+pygments: true

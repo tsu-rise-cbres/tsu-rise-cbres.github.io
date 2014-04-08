@@ -1,0 +1,16 @@
+---
+layout: default
+section: home
+title: people
+---
+
+A list of our people.
+
+<ul>
+{% for member in site.data.people %}
+<li>
+	<a href="documents/{{member.last_name}}.pdf"> {{member.first_name}} {{member.last_name}} </a>
+</li>
+{% endfor %}
+</ul>
+
