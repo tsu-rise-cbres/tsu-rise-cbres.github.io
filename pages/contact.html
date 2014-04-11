@@ -4,7 +4,27 @@ section: home
 title: Contact
 ---
 
+<h2> Contact </h2>
 
-Contact forms here.
+<p>For any question or inquiry, please fill this form: </p>
+ 
+<form action="http://getsimpleform.com/messages?form_api_token=8c4873bfe0e8bcc29b2ce0b89912e52b" method="post" class="form-inline hero-unit">
+  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+  <input type='hidden' name='redirect_to' value='http://rudyjahchan.com/contact/thanks/' />
+  <!-- all your input fields here.... -->
+  <p>My name is <input type='text' name='name' />, and I want to talk to you about
+  <select name="subject">
+    <option>PhD research opportunity</option>
+    <option>Undergraduate research opportunity</option>
+    <option>High School research opportunity</option>
+    <option>I have a general interest</option>
+  </select>.</p>
+  <p><textarea name="details" style="width: 100%;" rows="10">You see ...</textarea></p>
+  <p>If you're interested you may contact me at
+  <input type="text" name="contact" />.</p>
+  <p>Cheers!</p>
+  <input type='submit' value='Send' class="btn btn-primary btn-large" />
+</form>
+
 
 
