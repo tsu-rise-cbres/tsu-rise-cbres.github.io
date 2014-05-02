@@ -3,14 +3,23 @@ layout: default
 section: home
 title: people
 ---
-
-A list of our people.
-
+{% assign sorted = site.data.people | sort: 'last_name' %}
 <ul>
-{% for member in site.data.people %}
+{% for member in sorted %}
 <li>
-	<a href="documents/{{member.last_name}}.pdf"> {{member.first_name}} {{member.last_name}} </a>
+<div style="clear:both">
+<img class="left" src={{member.photo}} width="120" style="clip:rect(0px,120px,120px,0px)">
+<a href={{member.link}}> {{member.first_name}} {{member.last_name}} </a>
+<br>
+	{{member.role}} | {{member.department}} | {{member.rank}}
+<br>
+{{member.education}}
+<br>
+<em> Research interests:</em> {{member.research}}
+
+</div>
 </li>
 {% endfor %}
+
 </ul>
 

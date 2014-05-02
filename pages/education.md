@@ -5,7 +5,7 @@ title: Education
 ---
 
 ### Goals:
-The goals of the education program in the funded RISE project all are designed to primarily strengthen the graduate program in Environmental Toxicology at TSU. More specifically, the main educational goals are: 
+The main objective of the education program is to strengthen the graduate program in Environmental Toxicology at TSU. Towards this end, the main educational goals are: 
 
 1.	establish a competitive graduate research fellowship, 
 2.	improve existing curriculum to create a strong multidisciplinary foundation, 

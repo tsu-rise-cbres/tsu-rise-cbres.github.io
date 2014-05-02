@@ -2,12 +2,13 @@
 layout: default
 title:  "Summer High School Research Program"
 date:   2014-04-11 04:19:07
+section: home
 category: announcement
 ---
 
 ##Summer High School Research Program
 
-May 26 - August 8, 2014
+Duration: May 26 - August 8, 2014
 
 *Program Components*
 

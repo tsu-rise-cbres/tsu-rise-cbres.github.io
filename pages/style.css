@@ -7,18 +7,21 @@ body
 
 p
 { margin: 0px;
-  padding: 0px 0px 16px 0px;
+  padding: 0px 0px 12px 0px;
   line-height: 1.5em;}
 
 h1
-{
-  font-size: 140%;
-}
+{ font-size: 140%;}
 
 h3
-{
-	font-size: 140%;
-}
+{ font-size: 140%;}
+
+ol, ul
+{ margin: 0px;}
+
+ol li, ul  li
+{ margin-bottom: 12px;}
+
 #main
 { background: #404040;
   width: 960px;

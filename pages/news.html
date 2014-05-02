@@ -4,12 +4,13 @@ section: home
 title: News
 ---
 
+<h1> News</h1>
 
 <ul>
   {% for post in site.posts %}
     <li>
-      <h1>{{ post.title }}</h1>
 	  {{post.content}}
+	  
     </li>
   {% endfor %}
 </ul>

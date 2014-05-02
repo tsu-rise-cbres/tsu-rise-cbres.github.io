@@ -1,10 +1,44 @@
 -
-  first_name: Daniel
-  last_name: Vrinceanu
-  department: Physics
-  research: "computational, modeling"
--
   first_name: Shishir
   last_name: Shishodia
   department: Biology
-  research: "path signaling"
+  rank: Associate Professor
+  role: Program Director
+  education: "Banaras Hindu University, Varanasi, India, 1997"
+  research: "computational science, biology modeling"
+  link: "http://cost.tsu.edu/WebPages/Faculty_HomePage.php?Tag=Biology_Shishodia_Shishir#page=page-1"
+  photo: "http://cost.tsu.edu/FacultyStaffPictures/Biology_Shishodia_Shishir_Picture.jpg"
+
+-
+  first_name: Jason A.
+  last_name: Rosenzweig
+  department: Biology
+  rank: Assistant Professor
+  role: Interim Chair for Department of Environmental and Interdisciplinary Science
+  education: "University of Miami, 2006"
+  research: "microbiology"
+  link: "http://cost.tsu.edu/WebPages/Faculty_HomePage.php?Tag=Biology_Rosenzweig_Jason#page=page-1"
+  photo: "http://cost.tsu.edu/FacultyStaffPictures/Biology_Rosenzweig_Jason_Picture.jpg"
+
+-
+  first_name: Hyun-Min
+  last_name: Hwang
+  department: Environmental and Interdisciplinary Science
+  rank: Assistant Professor
+  role: Investigator
+  education: "Texas A&M University, 2001"
+  research: "environmental science"
+  link: "http://cost.tsu.edu/WebPages/Faculty_HomePage.php?Tag=EnvironmentalScience_Hwang_Hyun-Min#page=page-1"
+  photo: "http://cost.tsu.edu/FacultyStaffPictures/Environmental_Hwang_Hyun-Min_Picture.jpg"
+
+-
+  first_name: Daniel
+  last_name: Vrinceanu
+  department: Physics
+  rank: Assistant Professor
+  role: Investigator
+  education: "Georgia Institute of Technology, 2000"
+  research: "computational science, biology modeling"
+  link: "http://cost.tsu.edu/WebPages/Faculty_HomePage.php?Tag=Physics_Vrinceanu_Daniel#page=page-1"
+  photo: "http://science.tsu.edu/FacultyStaffPictures/19e605ffaa4e6fc0.jpg"
+

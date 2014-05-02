@@ -2,6 +2,7 @@
 layout: default
 title:  "Summer Undergraduate Research Program"
 date:   2014-04-11 12:19:07
+section: home
 category: announcement
 ---
 
@@ -15,6 +16,8 @@ category: announcement
 - Academic advising and mentoring from graduate students and faculty members.
 - Workshops for GRE preparation, personal statement, interviewing skills, graduate school admissions. 
 
+<br>
+
 *Application Requirements*
 
 - Minority students with U.S. citizenship or permanent resident status.
@@ -24,6 +27,7 @@ category: announcement
 - High School transcript.
 - Current unofficial undergraduate transcript.
 
+<br>
 
 Email application materials to Dr. Shishir Shishodia (<shishodias@tsu.edu>) by May 07, 2014.
 
