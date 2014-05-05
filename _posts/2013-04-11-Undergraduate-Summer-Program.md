@@ -29,6 +29,6 @@ category: announcement
 
 <br>
 
-Email application materials to Dr. Shishir Shishodia (<shishodias@tsu.edu>) by May 07, 2014.
+Email application materials to Dr. Shishir Shishodia (<shishodias@tsu.edu>) by May 19, 2014.
 
 You can download a flyer [here](/documents/SURP.pdf) 

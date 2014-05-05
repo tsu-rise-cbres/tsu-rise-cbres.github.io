@@ -18,7 +18,6 @@ Duration: May 26 - August 8, 2014
 - Academic advising and mentoring from graduate students and faculty members.
 - Workshops for personal statement, testing skills, interviewing skills, college admissions, career guidance.
 
-
 *Application Requirements*
 
 - Minority students with U.S. citizenship or permanent resident status.
@@ -28,9 +27,9 @@ Duration: May 26 - August 8, 2014
 - Current transcript.
 
 
-
-Email application materials to Dr. Shishir Shishodia 
-(<shishodias@tsu.edu>) by May 07, 2014. 
+Fill [this form](/pages/apply-SHSRP.html) and
+email application materials to Dr. Shishir Shishodia 
+(<shishodias@tsu.edu>) by May 19, 2014. 
 
 You can download a flyer [here](/documents/SHSRP.pdf)
 
