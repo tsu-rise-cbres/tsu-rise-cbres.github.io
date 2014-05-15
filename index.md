@@ -5,9 +5,9 @@ title: Home
 ---
 
 <img class="left" src="/images/NSF-logo.jpg" height=132 style="margin-right:20px;">
-<img class="right" src="/images/TSU-logo.png" height=132 style="margin-left:20px;">
+<img class="right" src="/images/TSU-logo.png" height=110 style="margin-left:20px;margin-top:4px;">
 
-<h3>
+<h3 style="text-align:center;">
 <em style="color:maroon;">Characterization of Bio-Molecular Response to Environmental Stress</em>
 </h3>
 <br><br>
