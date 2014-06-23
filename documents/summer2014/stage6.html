@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stage 06</title>
+    <style>
+	body {background:lightgrey;}
+	#box {float:left;padding:4px; border-style:solid; border-width:1px;}
+    .player, .empty, .wall, .boulder, .target {float:left;width:22px;height:22px;}
+	.player {background-image:url("img/player.gif");}
+	.empty  {background-image:url("img/empty.gif");}
+	.wall   {background-image:url("img/wall.gif");}
+    .boulder {background-image:url("img/boulder.gif");}
+	.target  {background-image:url("img/target.gif");}	
+	</style
+</head>
+
+<body>
+<h1> Sokoban Game</h1>
+
+<script type="text/javascript">
+
+var SokobanLevels = [
+{ field: [
+	"######  ##### ",
+    "#    #  #   # ",
+    "# 0  #### 0 # ",
+    "# 0 @    0  # ",
+    "#  #######0 # ",
+    "####   ### ###",
+    "       #     #",
+    "       #0    #",
+    "       # 0   #",
+    "      ## 0   #",
+    "      #*0 0  #",
+    "      ########"],
+    boulders: 10},
+{field: [
+	"###########   ",
+    "#    #    #   ",
+    "#  00#00 @#   ",
+    "#     0   #   ",
+    "#    #    #   ",
+    "## #########  ",
+    "#  0 #     #  ",
+    "# 00 #0 0 0#  ",
+    "#  0     0 #  ",
+    "# 000#0  0 ###",
+    "#    #  0 0 *#",
+    "##############"],
+    boulders: 20}
+];
+
+var codes = {"@": "player", "#": "wall", "*": "target"," ": "empty", "0": "boulder"};
+
+var field = document.createElement("DIV");
+field.setAttribute("id","box");
+
+var k = 0;
+var level = SokobanLevels[k];
+var fieldWidth = level.field[0].length;
+var bouldersTogo = level.boulders;
+
+var direction = {"37": -1, "38":-fieldWidth, "39": 1, "40": fieldWidth};
+
+field.style.width=22*fieldWidth + "px";
+var index = 0;
+
+for (var j = 0; j < level.field.length; j++) {
+	var line = level.field[j];
+	for (var i = 0; i < line.length; i++){
+        var square = document.createElement("DIV");
+		square.setAttribute("class",codes[line[i]]);
+		field.appendChild(square);
+		if(codes[line[i]]=="player") playerPos = index;
+		index++;
+	}	
+}
+
+document.addEventListener("keydown",keyDown,false);
+var targetPos;
+
+function keyDown(event){
+	event.stopPropagation();
+	console.log("key with code "+event.keyCode+" was pressed!");
+ 	
+	targetPos = playerPos + direction[event.keyCode];
+  
+    if ( field.childNodes[targetPos].getAttribute("class") == "boulder" ) {
+    	var pushPos = targetPos + direction[event.keyCode];
+		if ( field.childNodes[pushPos].getAttribute("class") == "empty" ) { 			field.childNodes[targetPos].setAttribute("class", "empty");
+		    field.childNodes[pushPos].setAttribute("class", "boulder");
+		}
+		else if (field.childNodes[pushPos].getAttribute("class") == "target") {
+			field.childNodes[targetPos].setAttribute("class", "empty");
+			bouldersTogo--;
+			updatestats();
+		}
+	}
+	if ( field.childNodes[targetPos].getAttribute("class") == "empty" ) {
+		field.childNodes[playerPos].setAttribute("class", "empty");
+		field.childNodes[targetPos].setAttribute("class", "player");
+		playerPos = targetPos;
+	}
+		
+}
+
+function updatestats(){ 
+	if (bouldersTogo > 0)
+	    {stats.innerHTML = "Level "+ (k + 1) +": "+ bouldersTogo + " more boulders to push out.";}
+    else 
+	    {stats.innerHTML = "Level "+ (k + 1) +": You win!";}
+}
+
+var stats = document.createElement("DIV");
+stats.style.margin="10px";
+updatestats();
+
+
+document.body.appendChild(stats);
+document.body.appendChild(field);
+
+</script>
+
+
+
+</body>
+</html>

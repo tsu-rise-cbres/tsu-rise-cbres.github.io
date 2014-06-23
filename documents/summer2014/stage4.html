@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stage 04</title>
+    <style>
+	body {background:lightgrey;}
+	#box {float:left;padding:4px; border-style:solid; border-width:1px;width:66px;}
+    .player, .empty, .wall  {float:left;width:22px;height:22px;}
+	.player {background-image:url("img/player.gif");}
+	.empty  {background-image:url("img/empty.gif");}
+	.wall   {background-image:url("img/wall.gif");}
+    .boulder {background-image:url("img/boulder.gif");}
+	.targer  {background-image:url("img/target.gif");}	
+	</style
+</head>
+
+<body>
+<h1> Sokoban Game</h1>
+
+<script type="text/javascript">
+
+var SokobanLevels = [
+{ field: [
+	"######  ##### ",
+    "#    #  #   # ",
+    "# 0  #### 0 # ",
+    "# 0 @    0  # ",
+    "#  #######0 # ",
+    "####   ### ###",
+    "       #     #",
+    "       #0    #",
+    "       # 0   #",
+    "      ## 0   #",
+    "      #*0 0  #",
+    "      ########"],
+    boulders: 10},
+{field: [
+	"###########   ",
+    "#    #    #   ",
+    "#  00#00 @#   ",
+    "#     0   #   ",
+    "#    #    #   ",
+    "## #########  ",
+    "#  0 #     #  ",
+    "# 00 #0 0 0#  ",
+    "#  0     0 #  ",
+    "# 000#0  0 ###",
+    "#    #  0 0 *#",
+    "##############"],
+    boulders: 20}
+];
+
+var codes={"@": "player", "#": "wall", "*": "target"," ": "empty", "0": "boulder"};
+
+
+var mydiv = document.createElement("DIV");
+mydiv.setAttribute("id","box");
+
+</script>
+
+<div id="box">
+
+<div class="player"></div>
+<div class="empty"></div>
+<div class="player"></div>
+<div class="empty"></div>
+<div class="wall"></div>
+<div class="wall"></div>
+<div class="player"></div>
+<div class="empty"></div>
+<div class="wall"></div>
+<div class="wall"></div>
+
+
+</div>
+
+
+</body>
+</html>

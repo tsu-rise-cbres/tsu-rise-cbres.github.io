@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stage 03</title>
+    <style>
+	body {background:lightgrey;}
+	#box {float:left;padding:4px; border-style:solid; border-width:1px;line-height:0px;font-size:0px;}
+	img {border:none;}
+	</style
+</head>
+
+<body>
+<h1> Sokoban Game</h1>
+
+<script type="text/javascript">
+
+var SokobanLevels = [
+{ field: [
+	"######  ##### ",
+    "#    #  #   # ",
+    "# 0  #### 0 # ",
+    "# 0 @    0  # ",
+    "#  #######0 # ",
+    "####   ### ###",
+    "       #     #",
+    "       #0    #",
+    "       # 0   #",
+    "      ## 0   #",
+    "      #*0 0  #",
+    "      ########"],
+    boulders: 10},
+{field: [
+	"###########   ",
+    "#    #    #   ",
+    "#  00#00 @#   ",
+    "#     0   #   ",
+    "#    #    #   ",
+    "## #########  ",
+    "#  0 #     #  ",
+    "# 00 #0 0 0#  ",
+    "#  0     0 #  ",
+    "# 000#0  0 ###",
+    "#    #  0 0 *#",
+    "##############"],
+    boulders: 20}
+];
+
+var codes={"@": "player", "#": "wall", "*": "target"," ": "empty", "0": "boulder"};
+
+
+var mydiv = document.createElement("DIV");
+mydiv.setAttribute("id","box");
+
+var level = SokobanLevels[0];
+
+for (var j = 0; j < level.field.length; j++) {
+	var line = level.field[j];
+	for (var i = 0; i < line.length; i++){
+		var img = document.createElement("IMG");
+		img.setAttribute("src","img/"+codes[line[i]]+".gif");
+		mydiv.appendChild(img);
+		if(codes[line[i]]=="player") 
+		playerTag = img;
+	}
+	mydiv.appendChild(document.createElement("BR"));	
+}
+
+document.addEventListener("keydown",keyDown,false);
+
+function keyDown(event){
+	event.stopPropagation();
+	console.log("key with code "+event.keyCode+" was pressed!");
+    playerTag.setAttribute("src","../img2/player-t.gif");
+}
+document.body.appendChild(mydiv);
+
+
+</script>
+
+</body>
+</html>
