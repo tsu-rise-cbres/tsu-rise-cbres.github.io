@@ -1,7 +1,7 @@
 name: RISE
-source: .
-destination: ./_site
-layouts: ./_layouts
+source: .no
+destination: ./no_site
+layouts: ./no_layouts
 exclude: ['.doc','.docx']
 markdown: redcarpet
 pygments: true
